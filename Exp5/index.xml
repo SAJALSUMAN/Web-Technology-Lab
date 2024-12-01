@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+    <student>
+        <fName>John</fName>
+        <lName>Doe</lName>
+        <DoB>2000-05-15</DoB>
+        <yearOfJoining>2018</yearOfJoining>
+        <branch>Computer Science</branch>
+        <section>A</section>
+    </student>
+
+    <student>
+        <fName>Jane</fName>
+        <lName>Smith</lName>
+        <DoB>1999-09-22</DoB>
+        <yearOfJoining>2017</yearOfJoining>
+        <branch>Electrical Engineering</branch>
+        <section>B</section>
+    </student>
+
+    <student>
+        <fName>Mark</fName>
+        <lName>Johnson</lName>
+        <DoB>2000-11-10</DoB>
+        <yearOfJoining>2018</yearOfJoining>
+        <branch>Mechanical Engineering</branch>
+        <section>C</section>
+    </student>
+
+    <student>
+        <fName>Emma</fName>
+        <lName>Williams</lName>
+        <DoB>1999-03-18</DoB>
+        <yearOfJoining>2017</yearOfJoining>
+        <branch>Civil Engineering</branch>
+        <section>A</section>
+    </student>
+
+    <student>
+        <fName>Oliver</fName>
+        <lName>Brown</lName>
+        <DoB>2001-01-07</DoB>
+        <yearOfJoining>2019</yearOfJoining>
+        <branch>Computer Science</branch>
+        <section>B</section>
+    </student>
+
+    <student>
+        <fName>Ava</fName>
+        <lName>Jones</lName>
+        <DoB>2000-07-20</DoB>
+        <yearOfJoining>2018</yearOfJoining>
+        <branch>Electrical Engineering</branch>
+        <section>C</section>
+    </student>
+
+    <student>
+        <fName>Lucas</fName>
+        <lName>Garcia</lName>
+        <DoB>1999-12-05</DoB>
+        <yearOfJoining>2017</yearOfJoining>
+        <branch>Mechanical Engineering</branch>
+        <section>A</section>
+    </student>
+
+    <student>
+        <fName>Isabella</fName>
+        <lName>Miller</lName>
+        <DoB>2001-04-02</DoB>
+        <yearOfJoining>2019</yearOfJoining>
+        <branch>Civil Engineering</branch>
+        <section>B</section>
+    </student>
+
+    <student>
+        <fName>Elijah</fName>
+        <lName>Davis</lName>
+        <DoB>2000-08-25</DoB>
+        <yearOfJoining>2018</yearOfJoining>
+        <branch>Computer Science</branch>
+        <section>C</section>
+    </student>
+
+    <student>
+        <fName>Charlotte</fName>
+        <lName>Martinez</lName>
+        <DoB>2000-10-12</DoB>
+        <yearOfJoining>2018</yearOfJoining>
+        <branch>Electrical Engineering</branch>
+        <section>A</section>
+    </student>
+</students>

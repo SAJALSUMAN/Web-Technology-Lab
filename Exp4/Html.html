@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        /* Styling for the body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Form container */
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin: 10px 0 5px;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .error {
+            color: red;
+            font-size: 12px;
+        }
+
+        .success {
+            color: green;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+    </style>
+
+    <script>
+        // Function to validate the mobile number
+        function validateMobileNumber() {
+            var mobileNumber = document.getElementById("mobile").value;
+            var mobileRegex = /^[6-9]\d{9}$/; // Mobile number should start with 6-9 and followed by 9 digits
+            var errorMessage = document.getElementById("mobile-error");
+
+            if (!mobileRegex.test(mobileNumber)) {
+                errorMessage.textContent = "Please enter a valid mobile number (10 digits, starting with 6-9).";
+                return false;
+            } else {
+                errorMessage.textContent = "";
+            }
+            return true;
+        }
+
+        // Function to validate the email ID
+        function validateEmail() {
+            var email = document.getElementById("email").value;
+            var emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            var errorMessage = document.getElementById("email-error");
+
+            if (!emailRegex.test(email)) {
+                errorMessage.textContent = "Please enter a valid email address.";
+                return false;
+            } else {
+                errorMessage.textContent = "";
+            }
+            return true;
+        }
+
+        // Function to handle the form submission
+        function validateForm() {
+            if (!validateMobileNumber() || !validateEmail()) {
+                return false; // If validation fails, do not submit the form
+            }
+            document.getElementById("success-message").textContent = "Form submitted successfully!";
+            return true; // If both validations pass, submit the form
+        }
+    </script>
+</head>
+
+<body>
+    <div class="form-container">
+        <h2>Registration Form</h2>
+        <form onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="mobile">Mobile Number:</label>
+                <input type="text" id="mobile" name="mobile" placeholder="Enter your mobile number (10 digits)" required onblur="validateMobileNumber()">
+                <span id="mobile-error" class="error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email ID:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required onblur="validateEmail()">
+                <span id="email-error" class="error"></span>
+            </div>
+
+            <input type="submit" value="Submit">
+            <div id="success-message" class="success"></div>
+        </form>
+    </div>
+</body>
+
+</html>

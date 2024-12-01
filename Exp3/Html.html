@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My E-commerce Store</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <header>
+        <h1>My E-commerce Store</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Categories</a>
+            <a href="#">Accounts</a>
+            <a href="#" id="cart-link">Cart (<span id="cart-count">0</span>)</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Apple Products</h2>
+        <div class="product-grid">
+            <!-- 8 Products -->
+            <div class="product">
+                <img src="https://th.bing.com/th/id/OIP.burNdnKENPDW_lX2C4BrWwHaHa?w=179&h=180" alt="iPhone 14">
+                <p>iPhone 14</p>
+                <p>₹79,900</p>
+                <button class="add-to-cart" data-name="iPhone 14" data-price="79900">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://th.bing.com/th/id/OIP.OupxYKAsTrBzxnRDNsQxEwHaHa?w=187&h=187" alt="iPad Pro">
+                <p>iPad Pro</p>
+                <p>₹81,900</p>
+                <button class="add-to-cart" data-name="iPad Pro" data-price="81900">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://th.bing.com/th?q=MacBook+Air+Starlight+Color" alt="MacBook Air">
+                <p>MacBook Air</p>
+                <p>₹1,14,900</p>
+                <button class="add-to-cart" data-name="MacBook Air" data-price="114900">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="http://ts4.mm.bing.net/th?id=OIP.Uuf-lQaXV-2hfrhHtdSjeQHaHa" alt="Apple Watch">
+                <p>Apple Watch</p>
+                <p>₹41,900</p>
+                <button class="add-to-cart" data-name="Apple Watch" data-price="41900">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://th.bing.com/th/id/OIP.dd91a4QJSCkmvaffwE2CvQHaHa?w=161&h=180" alt="AirPods Pro">
+                <p>AirPods Pro</p>
+                <p>₹24,900</p>
+                <button class="add-to-cart" data-name="AirPods Pro" data-price="24900">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://th.bing.com/th/id/OIP.F3y5-G1uxIBZqJYlqsFAwQHaHa?w=179&h=180" alt="iMac">
+                <p>iMac</p>
+                <p>₹1,29,900</p>
+                <button class="add-to-cart" data-name="iMac" data-price="129900">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://th.bing.com/th?q=Apple+TV+Gen+6" alt="Apple TV 4K">
+                <p>Apple TV 4K</p>
+                <p>₹18,900</p>
+                <button class="add-to-cart" data-name="Apple TV 4K" data-price="18900">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://th.bing.com/th/id/OIP.-example-image?w=180&h=180" alt="Apple HomePod">
+                <p>HomePod</p>
+                <p>₹32,900</p>
+                <button class="add-to-cart" data-name="HomePod" data-price="32900">Add to Cart</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 My E-commerce Store</p>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p id="total-price">Total: ₹0</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
