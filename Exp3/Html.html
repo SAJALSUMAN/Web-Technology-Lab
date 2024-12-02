@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My E-commerce Store</title>
+    <title>MarketKart</title>
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
     <header>
-        <h1>My E-commerce Store</h1>
+        <h1>MarketKart</h1>
         <nav>
             <a href="#">Home</a>
             <a href="#">Products</a>
@@ -18,9 +18,8 @@
         </nav>
     </header>
     <main>
-        <h2>Apple Products</h2>
+        <h2>Products</h2>
         <div class="product-grid">
-            <!-- 8 Products -->
             <div class="product">
                 <img src="https://th.bing.com/th/id/OIP.burNdnKENPDW_lX2C4BrWwHaHa?w=179&h=180" alt="iPhone 14">
                 <p>iPhone 14</p>
@@ -64,7 +63,7 @@
                 <button class="add-to-cart" data-name="Apple TV 4K" data-price="18900">Add to Cart</button>
             </div>
             <div class="product">
-                <img src="https://th.bing.com/th/id/OIP.-example-image?w=180&h=180" alt="Apple HomePod">
+                <img src="https://th.bing.com/th/id/OIP.hyaC36hNyIGL6LkerJ6ipgHaE8?w=246&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Apple HomePod">
                 <p>HomePod</p>
                 <p>₹32,900</p>
                 <button class="add-to-cart" data-name="HomePod" data-price="32900">Add to Cart</button>
@@ -82,6 +81,7 @@
             <h2>Your Cart</h2>
             <ul id="cart-items"></ul>
             <p id="total-price">Total: ₹0</p>
+            <button id="checkout-btn">Checkout</button>
         </div>
     </div>
 
